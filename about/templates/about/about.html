@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+
+{% block page_style %}
+
+<title>andr_drgm About</title>
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style/navbar.css' %}">
+<link rel="stylesheet" href="{% static 'style/social.css' %}">
+<link rel="stylesheet" href="{% static 'style/title.css' %}">
+<link rel="stylesheet" href="{% static 'about/about.css' %}">
+
+{% endblock %}
+
+{% block page_content %}
+
+<div class="aboutText">
+    <p>
+        Hi!<br>
+        <br>
+        My name is <b>Andrei Dragomir</b> and I'm a 20 years old computer science student.<br>
+        <br>
+        One of my hobbies are taking <b>photos</b> and <b>videos</b>.<br>
+        <br>
+        Years ago I was confident that mobile is the future. It is why I was excited to learn <b>Android development</b>.
+        I've created a variety of apps such as a <b>wake on Lan app</b>, <b>currency</b> using blockchain, <b>social media</b> and a
+        <b>bitcoin tracker</b>.<br>
+        <br>
+        Email: <b>dragomirandy900@gmail.com</b><br>
+        Phone: <b>+40746813042</b><br>
+    </p>
+</div>
+
+{% endblock %}

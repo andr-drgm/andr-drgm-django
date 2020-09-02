@@ -1,0 +1,42 @@
+.logo{
+    width: max-content;
+    display: flex;
+    height: 12%;
+    padding-top: 4%;
+    margin: auto;
+    position: relative;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+/* inaltimea este de 20% */
+
+.profileImage{
+    height: 100%;
+    object-fit: contain;
+}
+
+.titleLogo{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 5%;
+}
+
+@media (orientation: landscape){
+    .logo{
+        padding-top: 0;
+        height: 15%;
+        position: fixed;
+        padding: 1%;
+    }
+
+    .titleLogo h3{
+        font-size: xx-large;
+    }
+}
+
+
+

@@ -1,0 +1,13 @@
+.postBox{
+    display: block;
+}
+
+@media (orientation: landscape){
+    .postBox{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        padding-top: 12%;
+    }
+}

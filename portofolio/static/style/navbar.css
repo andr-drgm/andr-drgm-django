@@ -1,0 +1,61 @@
+.navButtons{
+    position: relative;
+    width: 100%;
+    padding-top: 4%;
+}
+
+.navButtons div{
+    display: flex;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navButtons a{
+    
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-weight: 300;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    padding: 2%;
+}
+
+.navButtons a:hover{
+    text-decoration: underline;
+}
+
+@media (orientation: landscape){
+    .navButtons{
+        position: fixed;
+        left: 0;
+        width: fit-content;
+        height: fit-content;
+        padding-top: 0;
+        top: 30%;
+        margin:auto;
+    }
+    
+    .navButtons div{
+        display: block;
+        text-align: left;
+        position: relative;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .navButtons a{
+        position: relative;
+        font-weight: 300;
+        font-size: 56px;
+        color: black;
+        display: block;
+        text-decoration: none;
+    }
+}
