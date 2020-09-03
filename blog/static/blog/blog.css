@@ -17,6 +17,7 @@
 
 .post p{
     height: 50px;
+    overflow: hidden;
 }
 
 .post a{
