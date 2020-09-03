@@ -2,6 +2,44 @@
     display: block;
 }
 
+.title{
+    text-align: center;
+}
+
+.date{
+    text-align: center;
+}
+
+.cover{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+p{
+    font-weight: 300;
+    font-size: large;
+}
+
+.categoryDiv{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.category{
+    color: black;
+    text-decoration: none;
+}
+
+.category:hover{
+    text-decoration: underline;
+}
+
 @media (orientation: landscape){
     .postBox{
         width: 60%;

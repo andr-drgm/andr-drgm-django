@@ -17,13 +17,15 @@
 
 <div class="postBox">
 
-    <h1>{{ post.title }}</h1>
-    <h6>{{ post.created_on }}</h6>
-    {% for c in post.category %}
-    <a href="#">c</a>
-    {% endfor %}
-    <img src="{{ post.cover.url }}">
-    <p>{{ post.body }}</p>
+    <h1 class="title">{{ post.title }}</h1>
+    <h6 class="date">{{ post.created_on }}</h6>
+    <div class="categoryDiv">
+        {% for c in post.categories.all %}
+        <a class="category" href="#">{{ c.name }}, </a>
+        {% endfor %}
+    </div>
+    <img class="cover" src="{{ post.cover.url }}">
+    <p>{{ post.body | safe }}</p>
 
 </div>
 

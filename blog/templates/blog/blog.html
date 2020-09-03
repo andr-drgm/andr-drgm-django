@@ -20,8 +20,8 @@
     {% for p in posts %}
     <div class="post">
         <img src="{{ p.cover.url }}">
-        <h1>{{ p.title }}</h1>
-        <p>{{ p.body }}</p>
+        <h1 onclick="window.location=`{% url 'blog_detail' p.slug %}`;">{{ p.title }}</h1>
+        <p>{{ p.body | slice:":120" }}...</p>
         <a href="{% url 'blog_detail' p.slug %}">View more</a>
     </div>
     {% endfor %}
