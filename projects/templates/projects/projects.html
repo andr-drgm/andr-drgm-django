@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+
+{% block page_style %}
+
+<title>andr_drgm Blog</title>
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style/navbar.css' %}">
+<link rel="stylesheet" href="{% static 'style/social.css' %}">
+<link rel="stylesheet" href="{% static 'style/title.css' %}">
+<link rel="stylesheet" href="{% static 'projects/projects.css' %}">
+
+{% endblock %}
+
+{% block page_content %}
+
+<div class="postsBox">
+
+    {% for p in projects %}
+    <div class="post">
+        <img src="{{ p.cover.url }}">
+        <h1>{{ p.title }}</h1>
+        <p>{{ p.body | slice:":120" }}...</p>
+        {% for t in p.tools.all %}
+            <a href="#" style="font-weight: 600;">{{ t.name }} </a>
+        {% endfor %}
+        <br>
+        <a href="{{ p.demoLink }}">Demo</a>
+        <a href="{{ p.githubLink }}">Documentation</a>
+        <a>More</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

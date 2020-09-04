@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block page_style %}
+
+<title>andr_drgm Blog</title>
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style/navbar.css' %}">
+<link rel="stylesheet" href="{% static 'style/social.css' %}">
+<link rel="stylesheet" href="{% static 'style/title.css' %}">
+<link rel="stylesheet" href="{% static 'blog/blog_detail.css' %}">
+
+{% endblock %}
+
+{% block page_content %}
+
+<div class="postBox">
+
+    <h1 class="title">{{ post.title }}</h1>
+    <h6 class="date">{{ post.created_on }}</h6>
+    <div class="categoryDiv">
+        {% for c in post.categories.all %}
+        <a class="category" href="#">{{ c.name }}, </a>
+        {% endfor %}
+    </div>
+    <img class="cover" src="{{ post.cover.url }}">
+    <p>{{ post.body | safe }}</p>
+
+</div>
+
+{% endblock %}
