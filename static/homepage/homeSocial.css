@@ -1,0 +1,29 @@
+.socialLink{
+    height: 5%;
+    width: fit-content;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    top: 10%;
+}
+
+.socialLink img{
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
+.socialLink img:hover{
+    cursor: pointer;
+}
+
+@media (orientation: landscape){
+    .socialLink{
+        position: fixed;
+        top: 94%;
+        width: 100%;
+        text-align: center;
+    }
+}
