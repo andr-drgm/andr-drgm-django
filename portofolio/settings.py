@@ -25,7 +25,7 @@ SECRET_KEY = '7xj+_vgebvhqp(!9jvrjn8zhzsb-h^+!$np6amory6bs=7wzy)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["adrw-eu.herokuapp.com", "adrw.eu", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["adrw-eu.herokuapp.com", "adrw.eu", "www.adrw.eu", "127.0.0.1", "localhost"]
 
 
 # Application definition
