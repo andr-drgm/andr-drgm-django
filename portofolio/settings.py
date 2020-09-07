@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'portofolio.urls'
@@ -126,6 +127,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     "portofolio/static/"
 ]
+
+STATIC_ROOT = 'static'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Base url to serve media files
 MEDIA_URL = '/media/'
