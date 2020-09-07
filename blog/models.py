@@ -19,3 +19,10 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class PostImage(models.Model):
+    post = models.ForeignKey(Post, default=None, on_delete=models.CASCADE)
+    image = models.ImageField(null=True,blank=True,upload_to='images/')
+
+    def __str__(self):
+        return self.post.title

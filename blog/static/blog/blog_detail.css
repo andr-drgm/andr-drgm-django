@@ -22,6 +22,18 @@
 p{
     font-weight: 300;
     font-size: large;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+p img{
+    display: block;
+    max-width: 100%;
+    max-height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .categoryDiv{
