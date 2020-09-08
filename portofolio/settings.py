@@ -116,7 +116,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Bucharest'
+# TIME_ZONE = 'Europe/Bucharest'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -130,11 +131,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    "portofolio/static/"
-]
+# STATICFILES_DIRS = [
+#     "portofolio/static/"
+# ]
 
-STATIC_ROOT = 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
