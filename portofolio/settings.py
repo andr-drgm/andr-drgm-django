@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7xj+_vgebvhqp(!9jvrjn8zhzsb-h^+!$np6amory6bs=7wzy)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["adrw-eu.herokuapp.com", "adrw.eu", "www.adrw.eu", "127.0.0.1", "localhost"]
 
@@ -144,4 +144,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Secure
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT =True
 
