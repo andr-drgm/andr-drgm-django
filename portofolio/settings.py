@@ -24,6 +24,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = ["adrw-eu.herokuapp.com", "adrw.eu", "www.adrw.eu", "127.0.0.1", "localhost"]
 
@@ -145,4 +146,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT =True
+
+
 
